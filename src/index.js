@@ -5,6 +5,7 @@ const reader = async (fileName) => {
 	// dont change function name
   try{
     const content=await fs.readFile(fileName, 'utf-8');
+    console.log(content);
     return content;
   }
   catch(err){
